@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🏠 House Price Predictor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>🏠 House Price Predictor</h2>
+    <p class="subtitle">Enter house details and let AI predict the price</p>
+
+    <form id="houseForm">
+      <label>Area (sq ft):</label>
+      <input type="number" id="area" placeholder="e.g. 2000" required>
+
+      <label>Bedrooms:</label>
+      <input type="number" id="bedrooms" placeholder="e.g. 3" required>
+
+      <label>Bathrooms:</label>
+      <input type="number" id="bathrooms" placeholder="e.g. 2" required>
+
+      <label>Doors:</label>
+      <input type="number" id="doors" placeholder="e.g. 4" required>
+
+      <label>Age:</label>
+      <input type="number" id="age" placeholder="e.g. 10" required>
+
+      <label>Location:</label>
+      <select id="location">
+        <option value="newyork">Haldwani</option>
+        <option value="sanfrancisco">Delhi</option>
+        <option value="chicago">Dehradun</option>
+        <option value="boston">Shimla</option>
+      </select>
+
+      <div class="button-group">
+        <button type="submit" class="predict-btn">Predict</button>
+        <button type="button" class="ai-btn" onclick="autoFill()">✨ AI Suggest</button>
+      </div>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
