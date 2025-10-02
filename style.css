@@ -1,0 +1,105 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Container */
+.form-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  width: 400px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+  margin-bottom: 5px;
+  color: #2b5876;
+}
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Labels & Inputs */
+label {
+  display: block;
+  margin-top: 15px;
+  text-align: left;
+  font-weight: bold;
+  color: #444;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #4e4376;
+  outline: none;
+  box-shadow: 0 0 8px rgba(78, 67, 118, 0.3);
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.predict-btn {
+  background: #4e4376;
+  color: white;
+}
+.predict-btn:hover {
+  background: #372c5f;
+}
+
+.ai-btn {
+  background: #2b5876;
+  color: white;
+}
+.ai-btn:hover {
+  background: #1d3f54;
+}
+
+/* Result */
+#result {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2b5876;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
